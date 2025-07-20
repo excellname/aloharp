@@ -1,27 +1,24 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aloha RP</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="background"></div>
+import './index.css'
+import logo from '/logo.png'
+import bg from '/bg.jpg'
 
-  <div class="overlay">
-    <img src="assets/logo.png" class="logo" alt="Aloha RP" />
-    <h1 class="slogan">Реальность, в которую хочется нырнуть</h1>
+function App() {
+  return (
+    <div className="app">
+      <div className="overlay">
+        <img src={logo} alt="Aloha RP" className="logo" />
+        <h1 className="slogan">Реальность, в которую хочется нырнуть</h1>
 
-    <nav class="menu">
-      <a href="#">Главная</a>
-      <a href="#">О сервере</a>
-      <a href="#">Галерея</a>
-      <a href="#">Запуск</a>
-      <a href="#" class="cta">Начать играть</a>
-    </nav>
-  </div>
+        <nav className="menu">
+          <a href="#">Главная</a>
+          <a href="#">О сервере</a>
+          <a href="#">Галерея</a>
+          <a href="#">Запуск</a>
+          <a href="#" className="cta">Начать играть</a>
+        </nav>
+      </div>
+    </div>
+  )
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+export default App
