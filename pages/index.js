@@ -1,23 +1,27 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aloha RP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
 
-export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+  <div class="overlay">
+    <img src="assets/logo.png" class="logo" alt="Aloha RP" />
+    <h1 class="slogan">Реальность, в которую хочется нырнуть</h1>
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
+    <nav class="menu">
+      <a href="#">Главная</a>
+      <a href="#">О сервере</a>
+      <a href="#">Галерея</a>
+      <a href="#">Запуск</a>
+      <a href="#" class="cta">Начать играть</a>
+    </nav>
+  </div>
 
-      <Footer />
-    </div>
-  )
-}
+  <script src="script.js"></script>
+</body>
+</html>
