@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('assets/bg.jpg') no-repeat center center/cover;
+  filter: brightness(0.4);
+  z-index: 0;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.logo {
+  width: 400px;
+  filter: drop-shadow(0 0 15px #ff3cac);
+}
+
+.slogan {
+  font-size: 28px;
+  color: #eee;
+  margin-top: 10px;
+  text-shadow: 0 0 10px #ff3cac;
+}
+
+.menu {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 1px solid #ff3cac;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background: #ff3cac;
+  box-shadow: 0 0 15px #ff3cac;
+}
+
+.cta {
+  background: #ff3cac;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 0 15px #ff3cac;
+}
